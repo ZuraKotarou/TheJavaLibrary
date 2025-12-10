@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Lessons</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- HEADER natin boss eto yung navigation mismo -->
+  <header class="header">
+    <div class="header-container">
+      <img src="/images/logo.png" alt="Logo" class="logo">
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/html/Getting Started/getStartedHome.html">Get Started</a>
+        <a href="/html/Lessons/lessonsHome.html">Lessons</a>
+        <a href="/html/aboutUs.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION eto yung baba ng header yung may image and para saan itong page -->
+  <section class="hero">
+    <h1>JAVA Lesson 3</h1>
+  </section>
+
+  <h3 class="side_nav_title">Java Lesson 3: <br>Basic Data Structures</h3>
+  <div class="container">
+    <aside class="sidebar">
+      <nav class="side_nav">
+        <ul class="section_topics">
+          <li>Linear</li>
+          <ol>
+            <li><a href="#arrays">Arrays</a></li>
+            <li><a href="#list">List</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#queue">Queue</a></li>
+          </ol>
+          <li>Non-Linear</li>
+          <ol>
+            <li><a href="#set">Set</a></li>
+            <li><a href="#map">Map</a></li>
+          </ol>
+          <li><a href="#user_defined">Custom Data Structures</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#lesson_examination">Lesson Examination</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <article>
+      <h2 id="article_title">Basic Data Structures</h2>
+      <p>
+        Data structures are used to organize and store data in a computer. They help us keep our information in order
+        and make it easy to use. Think of data structures like different types of boxes or containers for your things.
+        In Java, we use data structures to improve efficiency of our programs. They help us solve complex problems by
+        organizing information in smart ways.
+
+        <br><br>Data structures are fundamental in programming because they provide efficient methods to organize and
+        manage vast amounts of information, allowing computers to work more effectively. By facilitating faster data
+        retrieval and manipulation, choosing the correct structure is essential for building high-quality, fast, and
+        scalable software application.
+
+        <br><br>In Java, data structures are primarily categorized into two groups: <b>built-in</b> and <b>custom.</b>
+      </p>
+
+      <h3><em>Built-in</em> Data Structures:</h3>
+      <p>
+        These are ready-made, pre-implemented components that are provided as part of the Java Development Kit (JDK),
+        primarily within the Collections Framework. This allows developers to use these reliable and optimized
+        structures immediately without the need to write custom implementation code.
+      </p>
+
+      <ol>
+        <li>Linear</li>
+        <p>
+          A linear data structure is an arrangement where data elements are stored and organized sequentially, meaning
+          each element is connected to the elements directly before and after it. This allows the elements to be
+          traversed, or visited, in a single, well-defined direction.
+        </p>
+
+        <section id="arrays">
+          <h4>Arrays</h4>
+          <p>
+            Arrays is the most fundamental linear data structure that stores a fixed-size, sequential collection of
+            elements of the same type in contiguous memory locations. Accessing any element is extremely fast because it
+            is done directly using its index number, which starts at 0.
+          </p>
+        </section>
+
+        <h4>Collections Framework</h4>
+        <p>
+          The Java Collections Framework provides a set of interfaces (like List, Set, and Map) and a set
+          of classes (ArrayList, HashSet, HashMap, etc.) that implement those interfaces. They are used to store,
+          search, sort, and organize data more easily - all using standardized methods and patterns.
+        </p>
+
+        <section id="list">
+          <h4>List</h4>
+          <p>
+            It represents an ordered collection of elements. You can access elements by their index, add duplicates, and
+            maintain the insertion order. Lists are like improved arrays. They can grow or shrink as needed.
+          </p>
+
+          <p>Java has two main types of lists: <b>ArrayList</b> and <b>LinkedList.</b></p>
+
+          <h5>ArrayList</h5>
+          <p>
+            A key implementation of the List interface in Java, functioning similarly to an array but with the critical
+            advantage of being dynamically resizable. While it excels at storing and retrieving elements quickly due to
+            its indexed structure, its performance suffers when adding or removing elements from the middle of the list,
+            as this operation requires shifting all subsequent elements.
+          </p>
+          <img src="../../images/Lessons/Lesson 3/01.png" alt="ArrayList" class="article_screenshot">
+          <img src="../../images/Lessons/Lesson 3/02.png" alt="ArrayList" class="article_screenshot">
+
+          <h5>LinkedList</h5>
+          <p>
+            Implements the List interface by utilizing separate items, known as nodes, that are explicitly linked
+            together. Unlike the ArrayList, this structure excels at efficiently adding or removing elements at any
+            position in the list, as it only requires updating the pointers of neighboring nodes. However, its
+            non-contiguous nature means that accessing an item by its position is slower, as the list must be traversed
+            sequentially from the beginning or end to reach the target index.
+          </p>
+          <img src="../../images/Lessons/Lesson 3/03.png" alt="LinkedList" class="article_screenshot">
+          <img src="../../images/Lessons/Lesson 3/04.png" alt="LinkedList" class="article_screenshot">
+
+          <h4>Watch the video below for a more detailed comparison between ArrayList and LinkedList:</h4>
+          <iframe width="600" height="600" src="https://www.youtube.com/embed/5dscMs2hnDI"
+            title="LinkedList vs ArrayList in Java Tutorial - Which Should You Use?" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <section id="stack">
+          <h4>Stack</h4>
+          <p>
+            A fundamental linear data structure that operates according to the Last-In, First-Out (LIFO) principle, much
+            like a pile of trays or plates. In this structure, elements can only be added (pushed) or removed (popped)
+            exclusively from the top. This singular point of access makes the stack highly effective for applications
+            requiring reverse ordering or keeping track of program history, such as managing function calls or
+            implementing 'undo' functionality.
+          </p>
+          <img src="../../images/Lessons/Lesson 3/05.png" alt="Stack" class="article_screenshot">
+          <img src="../../images/Lessons/Lesson 3/06.png" alt="Stack" class="article_screenshot">
+
+          <h4>Watch the video below for a more detailed explanation on Stack:</h4>
+          <iframe width="600" height="600" src="https://www.youtube.com/embed/ILJgewz5Dxw"
+            title="Stack Java Tutorial #65" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <section id="queue">
+          <h4>Queue</h4>
+          <p>
+            A critical linear data structure designed to manage items in a specific order, strictly following the
+            First-In, First-Out (FIFO) principle. This means that the first element added to the structure is always the
+            first one to be removed, much like a waiting line in the real world. New items are added (enqueued) to the
+            back, and items are removed (dequeued) from the front, making it ideal for managing sequential tasks like
+            print jobs or network requests.
+          </p>
+          <img src="../../images/Lessons/Lesson 3/07.png" alt="Queue" class="article_screenshot">
+          <img src="../../images/Lessons/Lesson 3/08.png" alt="Queue" class="article_screenshot">
+
+          <h4>Watch the video below for a more detailed explanation on Queue:</h4>
+          <iframe width="600" height="600" src="https://www.youtube.com/embed/91CMnJeHJVc"
+            title="Queue In Java Tutorial #66" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+
+        <li>Non-Linear</li>
+        <p>
+          This is where data elements are not arranged sequentially, but rather in a hierarchical or network format,
+          allowing each element to be linked to multiple other elements.
+        </p>
+
+        <section id="set">
+          <h4>Set</h4>
+          <p>
+            Represents an unordered collection of unique elements. It strictly enforces that no duplicate elements can
+            be stored. This structure is ideal when the integrity and uniqueness of elements are the primary concern,
+            such as storing a list of unique user IDs or unique words from a document.
+          </p>
+          <img src="../../images/Lessons/Lesson 3/09.png" alt="Set" class="article_screenshot">
+          <img src="../../images/Lessons/Lesson 3/10.png" alt="Set" class="article_screenshot">
+
+          <h4>Watch the video below for a more detailed explanation on Set:</h4>
+          <iframe width="600" height="600" src="https://www.youtube.com/embed/QvHBHuuddYk"
+            title="Set and HashSet in Java - Full Tutorial" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <section id="map">
+          <h4>Map</h4>
+          <p>
+            It is used to store data as collections of key-value pairs, making it a primary non-linear data structure
+            for look-ups. A fundamental rule of this structure is that every key must be unique, although multiple keys
+            can point to identical values. This structure is invaluable when you need to quickly retrieve a specific
+            value by using its unique associated identifier, such as associating a user's ID (key) with their detailed
+            profile information (value).
+          </p>
+          <img src="../../images/Lessons/Lesson 3/11.png" alt="Map" class="article_screenshot">
+          <img src="../../images/Lessons/Lesson 3/12.png" alt="Map" class="article_screenshot">
+
+          <h4>Watch the video below for a more detailed explanation on Map:</h4>
+          <iframe width="600" height="600" src="https://www.youtube.com/embed/H62Jfv1DJlU"
+            title="Map and HashMap in Java - Full Tutorial" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+      </ol>
+
+      <section id="user_defined">
+        <h3>Custom Data Structures:</h3>
+        <p>
+          These are are user-defined data organizations that a programmer implements when the built-in Java types (like
+          ArrayList or HashMap) do not perfectly meet the performance or organizational needs of a specialized task.
+          These structures, which include concepts like Trees, Graphs, or custom implementations of Linked Lists, allow
+          for tailored storage and relationship management among data elements.
+        </p>
+      </section>
+
+      <section id="references">
+        <h3>References:</h3>
+        <p>
+          [1] “Data Structures in Java.” CodeChef.
+          https://www.codechef.com/blogs/data-structures-in-java#types-of-data-structures-in-java (accessed Dec. 3,
+          2025).
+          <br>[2] “Java Data Structures.” W3Schools. https://www.w3schools.com/java/java_data_structures.asp (accessed
+          Dec. 3, 2025).
+
+        </p>
+      </section>
+
+      <section id="lesson_examination">
+        <h3>Lesson Examination</h3>
+        <form id="quizForm3">
+          <div class="question">
+            <p>Data structures are used in programming mainly to ______.</p>
+            <div class="choice">
+              <input type="radio" name="q1" value="A" id="q1a">
+              <label for="q1a">Make the code longer</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" value="B" id="q1b">
+              <label for="q1b">Organize and store data efficiently</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" value="C" id="q1c">
+              <label for="q1c">Remove errors</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" value="D" id="q1d">
+              <label for="q1d">Slow down the program</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Data structures in Java help programs become more ______.</p>
+            <div class="choice">
+              <input type="radio" name="q2" value="A" id="q2a">
+              <label for="q2a">Random and unpredictable</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" value="B" id="q2b">
+              <label for="q2b">Slow and unstable</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" value="C" id="q2c">
+              <label for="q2c">Efficient and scalable</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" value="D" id="q2d">
+              <label for="q2d">Difficult to understand</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Java data structures are categorized into ______.</p>
+            <div class="choice">
+              <input type="radio" name="q3" value="A" id="q3a">
+              <label for="q3a">Hardware and software</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q3" value="B" id="q3b">
+              <label for="q3b">Built-in and custom</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q3" value="C" id="q3c">
+              <label for="q3c">Primitive and functions</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q3" value="D" id="q3d">
+              <label for="q3d">Linear and string-based</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Built-in Java data structures are found in which framework?</p>
+            <div class="choice">
+              <input type="radio" name="q4" value="A" id="q4a">
+              <label for="q4a">Input/Output Framework</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q4" value="B" id="q4b">
+              <label for="q4b">Networking Framework</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q4" value="C" id="q4c">
+              <label for="q4c">Collections Framework</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q4" value="D" id="q4d">
+              <label for="q4d">File Management Framework</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>A linear data structure stores elements ______.</p>
+            <div class="choice">
+              <input type="radio" name="q5" value="A" id="q5a">
+              <label for="q5a">Randomly</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q5" value="B" id="q5b">
+              <label for="q5b">In a circular pattern</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q5" value="C" id="q5c">
+              <label for="q5c">Hierarchically</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q5" value="D" id="q5d">
+              <label for="q5d">Sequentially</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Which linear data structure stores elements in contiguous memory with a fixed size?</p>
+            <div class="choice">
+              <input type="radio" name="q6" value="A" id="q6a">
+              <label for="q6a">Array</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q6" value="B" id="q6b">
+              <label for="q6b">Stack</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q6" value="C" id="q6c">
+              <label for="q6c">Set</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q6" value="D" id="q6d">
+              <label for="q6d">LinkedList</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Which List implementation is dynamically resizable?</p>
+            <div class="choice">
+              <input type="radio" name="q7" value="A" id="q7a">
+              <label for="q7a">ArrayList</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q7" value="B" id="q7b">
+              <label for="q7b">StaticList</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q7" value="C" id="q7c">
+              <label for="q7c">GraphList</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q7" value="D" id="q7d">
+              <label for="q7d">ByteList</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Arrays in Java start at index 1.</p>
+            <div class="choice">
+              <input type="radio" name="q8" value="True" id="q8true">
+              <label for="q8true">True</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="False" id="q8false">
+              <label for="q8false">False</label>
+            </div>
+          </div>
+
+
+          <div class="question">
+            <p>A LinkedList stores elements in contiguous memory.</p>
+            <div class="choice">
+              <input type="radio" name="q9" value="True" id="q9true">
+              <label for="q9true">True</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q9" value="False" id="q9false">
+              <label for="q9false">False</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>A Stack allows insertion and removal only at the top.</p>
+            <div class="choice">
+              <input type="radio" name="q10" value="True" id="q10true">
+              <label for="q10true">True</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q10" value="False" id="q10false">
+              <label for="q10false">False</label>
+            </div>
+          </div>
+
+          <button type="button" onclick="checkAnswers('quizForm3', LessonThreeAnswers)"
+            id="submit_button">Submit</button>
+        </form>
+      </section>
+
+      <div class="article_nav">
+                <a href="/html/Lessons/lessons2.html"><img src="/images/previous_article.jfif" alt=""
+                        class="previous"></a>
+                <a href="/html/Lessons/lessons4.html"><img src="/images/next_article.png" alt=""></a>
+            </div>
+
+    </article>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

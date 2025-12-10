@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Lessons</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER natin boss eto yung navigation mismo -->
+    <header class="header">
+    <div class="header-container">
+      <img src="/images/logo.png" alt="Logo" class="logo">
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/html/Getting Started/getStartedHome.html">Get Started</a>
+        <a href="/html/Lessons/lessonsHome.html">Lessons</a>
+        <a href="/html/aboutUs.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- HERO SECTION eto yung baba ng header yung may image and para saan itong page -->
+    <section class="hero">
+        <h1>JAVA Lesson 2</h1>
+    </section>
+
+
+    <h3 class="side_nav_title">Java Lesson 2: <br>Basic Data Types</h3>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="side_nav">
+                <ul class="section_topics">
+                    <li>Primitive Data Types</li>
+                    <ol>
+                        <li><a href="#non_numeric">Non-Numeric</a></li>
+                        <li><a href="#numeric">Numeric</a></li>
+                    </ol>
+                    <li>Non-Primitive Data Types</li>
+                    <ol>
+                        <li><a href="#string">String</a></li>
+                        <li><a href="#array">Array</a></li>
+                    </ol>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#lesson_examination">Lesson Examination</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <article>
+            <h2 id="article_title">Basic Data Types</h2>
+            <p>
+                Because Java is a statically typed language, it requires variable types to be explicitly declared and
+                known at compile time. This strict requirement allows the compiler to catch type errors early,
+                preventing incorrect assignments like attempting to store a string in an integer variable from ever
+                compiling.
+
+                <br><br>In Java, a data type is a mandatory declaration that defines the structure and size of data a
+                variable is capable of holding. This structure fundamentally determines the storage mechanism:
+                <br>
+            </p>
+
+            <ul>
+                <li><b>Primitive Types:</b> Variables of these types hold the actual data value within their allocated
+                    memory space.</li>
+                <li><b>Non-Primitive Reference Data Types:</b> Variables of these types hold a pointer to the location
+                    in memory (the heap) where the actual object data resides.memory space.</li>
+            </ul>
+
+            <h3>Primitive Vs. Non-primitive/ Reference Data Types</h3>
+            <img src="../../images/Lessons/Lesson 2/data_types.png"
+                alt="Primitive Vs. Non-primitive/ Reference Data Types" class="article_screenshot">
+
+            <h3>PRIMITIVE DATA TYPES</h3>
+            <section id="non_numeric">
+                <h3>NON-NUMERIC</h3>
+                <p>
+                    Non-numeric data types are classifications of data that do not represent quantities and therefore
+                    cannot be used in mathematical calculations (like addition, subtraction, or averaging). Instead,
+                    they are used to store textual, logical, or other complex structures.
+                </p>
+
+                <h4>boolean</h4>
+                <p>Represents one of two logical values: true or false. Commonly used for conditional checks.</p>
+                <img src="../../images/Lessons/Lesson 2/01.png" alt="boolean" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 2/02.png" alt="boolean" class="article_screenshot">
+
+                <h4>char</h4>
+                <p> A 16-bit Unicode character used to store single symbols or letters.</p>
+                <img src="../../images/Lessons/Lesson 2/03.png" alt="char" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 2/04.png" alt="char" class="article_screenshot">
+
+            </section>
+
+            <section id="numeric">
+                <h3>NUMERIC</h3>
+                <p>
+                    Numeric data types are classifications of data that store quantitative values, meaning they
+                    represent numbers that can be used in mathematical operations, such as addition, subtraction,
+                    multiplication, and division.
+                </p>
+
+                <h4>Integer</h4>
+                <p>Integer are used to store non-decimal, whole numbers (both positive and negative). Java provides four
+                    options: byte, short, int, and long. These differ in the amount of memory they occupy and,
+                    consequently, the range of numbers they can hold. Selecting the most appropriate type is a decision
+                    based on the numeric value's size to ensure memory efficiency.</p>
+
+                <h5>byte</h5>
+                <p>An 8-bit signed integer used to save memory in large numeric arrays.</p>
+
+                <h5>short</h5>
+                <p>A 16-bit signed integer often used when memory is limited and values are moderate in size.</p>
+
+                <h5>int</h5>
+                <p>A 32-bit signed integer commonly used for whole numbers.</p>
+
+                <h5>long</h5>
+                <p>A 64-bit signed integer used when int is not sufficient for large values.</p>
+
+                <img src="../../images/Lessons/Lesson 2/05.png" alt="integer" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 2/06.png" alt="integer" class="article_screenshot">
+
+                <h4>Floating Point</h4>
+                <p>Floating Point are a class of numeric data types used in programming to store numbers that have a
+                    fractional component that is, numbers with a decimal point.</p>
+
+                <h5>float</h5>
+                <p>A 32-bit single-precision floating-point type used for fractional values.</p>
+
+                <h5>double</h5>
+                <p>A 64-bit double-precision floating-point type and the default for decimal numbers.</p>
+
+                <img src="../../images/Lessons/Lesson 2/07.png" alt="floating-point" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 2/08.png" alt="floating-point" class="article_screenshot">
+            </section>
+
+            <h3>NON-PRIMITIVE DATA TYPES</h3>
+            <section id="string">
+                <h4>String</h4>
+                <p>
+                    A sequence of characters used to represent textual data in programming, which can include letters,
+                    numbers, symbols, and spaces. It is a fundamental data type typically enclosed in quotation marks
+                    and is essential for storing and manipulating human-readable information.
+                </p>
+                <img src="../../images/Lessons/Lesson 2/09.png" alt="string" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 2/10.png" alt="string" class="article_screenshot">
+            </section>
+
+            <section id="array">
+                <h4>Array</h4>
+                <p>
+                    Stores multiple elements of the same type in a single structure. Java arrays are objects,
+                    dynamically allocated, and indexed from 0.
+                </p>
+                <img src="../../images/Lessons/Lesson 2/11.png" alt="array" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 2/12.png" alt="array" class="article_screenshot">
+            </section>
+
+            <h3>Watch the video below for the summary of data types in Java:</h3>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/D3DqJrlckbs"
+                title="Java - Data Types - W3Schools.com" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <section id="references">
+                <h3>References:</h3>
+                <p>
+                    [1] “Java Non‑Primitive Data Types.” W3Schools.
+                    https://www.w3schools.com/java/java_data_types_non-prim.asp (accessed Nov. 28, 2025).
+                    <br>[2] “Java Data Types.” GeeksforGeeks. https://www.geeksforgeeks.org/java/java-data-types/
+                    (accessed Nov. 28, 2025).
+                </p>
+            </section>
+
+            <section id="lesson_examination">
+                <h3>Lesson Examination</h3>
+                <form id="quizForm2">
+                    <div class="question">
+                        <p>Java requires variable types to be declared before use because it is a ____ language.</p>
+                        <div class="choice">
+                            <input type="radio" name="q1" value="A" id="q1a">
+                            <label for="q1a">Dynamically typed</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q1" value="B" id="q1b">
+                            <label for="q1b">Statically typed</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q1" value="C" id="q1c">
+                            <label for="q1c">Weakly typed</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q1" value="D" id="q1d">
+                            <label for="q1d">Functional</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What does the Java compiler prevent by enforcing strict type declarations?</p>
+                        <div class="choice">
+                            <input type="radio" name="q2" value="A" id="q2a">
+                            <label for="q2a">Slow execution</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q2" value="B" id="q2b">
+                            <label for="q2b">Late compilation</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q2" value="C" id="q2c">
+                            <label for="q2c">Incorrect data assignments</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q2" value="D" id="q2d">
+                            <label for="q2d">Object creation</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Primitive data types store ____.</p>
+                        <div class="choice">
+                            <input type="radio" name="q3" value="A" id="q3a">
+                            <label for="q3a">References to objects</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q3" value="B" id="q3b">
+                            <label for="q3b">Actual data values</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q3" value="C" id="q3c">
+                            <label for="q3c">Methods</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q3" value="D" id="q3d">
+                            <label for="q3d">Classes</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Non-primitive data types store ____.</p>
+                        <div class="choice">
+                            <input type="radio" name="q4" value="A" id="q4a">
+                            <label for="q4a">The actual data</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q4" value="B" id="q4b">
+                            <label for="q4b">The program syntax</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q4" value="C" id="q4c">
+                            <label for="q4c">A memory address or reference</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q4" value="D" id="q4d">
+                            <label for="q4d">A class name</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which primitive type stores only true or false?</p>
+                        <div class="choice">
+                            <input type="radio" name="q5" value="A" id="q5a">
+                            <label for="q5a">char</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q5" value="B" id="q5b">
+                            <label for="q5b">boolean</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q5" value="C" id="q5c">
+                            <label for="q5c">byte</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q5" value="D" id="q5d">
+                            <label for="q5d">int</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which primitive type is used to store a single Unicode character?</p>
+                        <div class="choice">
+                            <input type="radio" name="q6" value="A" id="q6a">
+                            <label for="q6a">char</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q6" value="B" id="q6b">
+                            <label for="q6b">boolean</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q6" value="C" id="q6c">
+                            <label for="q6c">byte</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q6" value="D" id="q6d">
+                            <label for="q6d">int</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which of the following is NOT an integer type?</p>
+                        <div class="choice">
+                            <input type="radio" name="q7" value="A" id="q7a">
+                            <label for="q7a">byte</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q7" value="B" id="q7b">
+                            <label for="q7b">short</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q7" value="C" id="q7c">
+                            <label for="q7c">long</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q7" value="D" id="q7d">
+                            <label for="q7d">float</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>A String in Java is considered a non-primitive reference type.</p>
+                        <div class="choice">
+                            <input type="radio" name="q8" value="True" id="q8true">
+                            <label for="q8true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q8" value="False" id="q8false">
+                            <label for="q8false">False</label>
+                        </div>
+                    </div>
+
+
+                    <div class="question">
+                        <p>A byte uses more memory than a short.</p>
+                        <div class="choice">
+                            <input type="radio" name="q9" value="True" id="q9true">
+                            <label for="q9true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q9" value="False" id="q9false">
+                            <label for="q9false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>A char can only store English alphabet letters.</p>
+                        <div class="choice">
+                            <input type="radio" name="q10" value="True" id="q10true">
+                            <label for="q10true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q10" value="False" id="q10false">
+                            <label for="q10false">False</label>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="checkAnswers('quizForm2', LessonTwoAnswers)"
+                        id="submit_button">Submit</button>
+                </form>
+            </section>
+
+            <div class="article_nav">
+                <a href="/html/Lessons/lessons1.html"><img src="/images/previous_article.jfif" alt=""
+                        class="previous"></a>
+                <a href="/html/Lessons/lessons3.html"><img src="/images/next_article.png" alt=""></a>
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

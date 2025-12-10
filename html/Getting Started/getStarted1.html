@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Java</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <!-- HEADER natin boss eto yung navigation mismo -->
+    <header class="header">
+        <div class="header-container">
+            <img src="/images/logo.png" alt="Logo" class="logo">
+            <nav class="nav">
+                <a href="/index.html">Home</a>
+                <a href="/html/Getting Started/getStartedHome.html">Get Started</a>
+                <a href="/html/Lessons/lessonsHome.html">Lessons</a>
+                <a href="/html/aboutUs.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION eto yung baba ng header yung may image and para saan itong page -->
+    <section class="hero">
+        <h1>Getting Started With Java</h1>
+    </section>
+
+
+
+
+
+    <h3 class="side_nav_title">Installing the Java <br>Development Kit (JDK)</h2>
+        <div class="container">
+            <aside class="sidebar">
+                <nav class="side_nav">
+
+                    <ul class="section_topics">
+                        <li>STEP-BY-STEP</li>
+                        <ol>
+                            <li><a href="#downloading_jdk">Downloading Java Development Kit (JDK)</a></li>
+                            <li><a href="#installing_jdk">Installing Java Development Kit (JDK)</a></li>
+                            <li><a href="#setting_up_environment_variables">Setting Up Environment Variables</a></li>
+                            <li><a href="#verifying_installation">Verifying Installation</a></li>
+                        </ol>
+                        <li><a href="#references">References</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <article>
+                <h2 id="article_title">Installing the Java Development Kit (JDK)</h2>
+                <p>
+                    Before you can write or run any Java programs, you need to install the Java Development Kit (JDK).
+                    The JDK contains all the tools needed to compile and execute Java code, including the Java compiler
+                    and the Java Virtual Machine (JVM).
+
+                    <br><br>Installing Java also requires setting up the correct environment variables on your system so
+                    that Java commands can run smoothly in the command prompt. Below is a clear, step-by-step guide on
+                    how to download, install, and configure Java on a Windows 64-bit operating system.
+                </p>
+
+                <section id="downloading_jdk">
+                    <h3>Step 1: Visit the Official Oracle Website</h3>
+                    <img src="../../images/Gettting started/Downloading JDK/01.png" alt="Visit website"
+                        class="article_screenshot">
+                    <p>
+                        To download Java safely, you should always use the official Oracle website. Go
+                        to:oracle.com/java and click on the “Download Java” button. This will take you to the page where
+                        you can find the latest version of the Java Development Kit.
+                    </p>
+
+                    <h3>Step 2: Download the JDK for Windows</h3>
+                    <img src="../../images/Gettting started/Downloading JDK/02.png" alt="Download JDK"
+                        class="article_screenshot">
+                    <p>
+                        On the download page, you will see the latest JDK version available—typically something like JDK
+                        23. Several download options will appear for different operating systems such as Linux, macOS,
+                        and Windows.
+
+                        <br><br>Since we are installing on Windows:
+                    <ol>
+                        <li>Click the Windows tab.</li>
+                        <li>Select the x64 Installer (.exe) option to download the installer for 64-bit Windows</li>
+                    </ol>
+
+                    The .exe file will start downloading, and once complete, it will be available in your Downloads
+                    folder
+                    </p>
+                </section>
+
+                <section id="installing_jdk">
+                    <h3>Step 3: Install the Java Development Kit (JDK)</h3>
+                    <img src="../../images/Gettting started/Downloading JDK/03.png" alt="Install JDK"
+                        class="article_screenshot">
+                    <p>
+                        Navigate to your Downloads folder and double-click the file named something like:
+                        jdk-23_windows-x64_bin.exe
+                        <br>This will launch the Java Installation Wizard.
+                    </p>
+
+                    <img src="../../images/Gettting started/Downloading JDK/04.png" alt="Install JDK"
+                        class="article_screenshot">
+                    <p>
+                        Click Next to begin the installation.
+
+                    </p>
+
+                    <img src="../../images/Gettting started/Downloading JDK/05.png" alt="Install JDK"
+                        class="article_screenshot">
+                    <p>
+                        The installer will show you the default installation path—usually in: C:\Program
+                        Files\Java\jdk-23
+                        <br>Click Next again, and the installation process will start.
+                    </p>
+
+                    <img src="../../images/Gettting started/Downloading JDK/06.png" alt="Install JDK"
+                        class="article_screenshot">
+                    <p>
+                        Once it completes, click Close to finish the installation.
+                    </p>
+                </section>
+
+                <section id="setting_up_environment_variables">
+                    <h3>Step 4: Set Up the Environment Variables</h3>
+                    <p>
+                        To run Java from the command prompt, you must configure the PATH environment variable.
+                    </p>
+                    <img src="../../images/Gettting started/Downloading JDK/07.png" alt="Set Up Environment Variables"
+                        class="article_screenshot">
+                    <ul>
+                        <li>Open your C: drive and navigate to: C:\Program Files\Java\jdk-23\bin</li>
+                        <li>Copy the full path from the address bar—this is the location of all Java tools.</li>
+                    </ul>
+
+                    <img src="../../images/Gettting started/Downloading JDK/08.png" alt="Install JDK"
+                        class="article_screenshot">
+                    <ul>
+                        <li>Now search your computer for “Environment Variables” and open it.</li>
+                        <li>In the System Properties window, click Environment Variables.</li>
+                    </ul>
+
+                    <img src="../../images/Gettting started/Downloading JDK/09.png" alt="Install JDK"
+                        class="article_screenshot">
+                    <ul>
+                        <li>Under the System variables section, find and select the variable named Path.</li>
+                        <li>Click Edit.</li>
+                    </ul>
+
+                    <img src="../../images/Gettting started/Downloading JDK/10.png" alt="Install JDK"
+                        class="article_screenshot">
+                    <ul>
+                        <li>Click New, and paste the path you copied earlier.</li>
+                        <li>Press OK to save the changes.</li>
+                    </ul>
+
+                    <p>
+                        Setting this PATH ensures that Windows can locate Java commands like <b>java</b> and
+                        <b>javac</b> from any folder in the command prompt.
+                    </p>
+                </section>
+
+                <section id="verifying_installation">
+                    <h3>Step 5: Verify the Installation</h3>
+                    <p>
+                        To confirm that Java is successfully installed:
+                    <ol>
+                        <li>Open Command Prompt.</li>
+                        <li>Type the following command:</li>
+                    </ol>
+                    </p>
+                    <img src="../../images/Gettting started/Downloading JDK/11.png" alt="Verify Installation"
+                        class="article_screenshot">
+                </section>
+
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/srweAz6OdKc"
+                    title="How to Download and Install JAVA JDK on Windows 10/11 | Complete Guide" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <section id="references">
+                    <h3>References:</h3>
+                    <p>
+                        [1] “How to Download and Install Java on Windows, Linux and macOS.” GeeksforGeeks.
+                        https://www.geeksforgeeks.org/linux-unix/download-install-java-windows-linux-macos/ (accessed
+                        Nov. 28, 2025).
+                    </p>
+                </section>
+                <div class="article_nav">
+                    <a href="/html/Getting Started/getStartedHome.html"><img src="/images/back_article_list.png"
+                            alt=""></a>
+                    <a href="/html/Getting Started/getStarted2.html"><img src="/images/next_article.png" alt=""></a>
+                </div>
+            </article>
+
+
+        </div>
+
+
+
+
+</body>
+
+</html>

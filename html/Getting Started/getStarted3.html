@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Java</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <!-- HEADER natin boss eto yung navigation mismo -->
+    <header class="header">
+        <div class="header-container">
+            <img src="/images/logo.png" alt="Logo" class="logo">
+            <nav class="nav">
+                <a href="/index.html">Home</a>
+                <a href="/html/Getting Started/getStartedHome.html">Get Started</a>
+                <a href="/html/Lessons/lessonsHome.html">Lessons</a>
+                <a href="/html/aboutUs.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION eto yung baba ng header yung may image and para saan itong page -->
+    <section class="hero">
+        <h1>Getting Started With Java</h1>
+    </section>
+
+
+    <h3 class="side_nav_title">Writing your First Java <br>Program</h3>
+    <div class="container">
+
+        <aside class="sidebar">
+            <nav class="side_nav">
+
+                <ul class="section_topics">
+                    <li><a href="#creating_new_project">Create a New Project</a></li>
+                    <li><a href="#understanding_hello_program">Understanding the Java Hello Program</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <article>
+            <h2 id="article_title">Writing your First Java Program</h2>
+
+            <section id="creating_new_project">
+                <h3>Create a new project</h3>
+                <ol>
+                    <li>Launch IntelliJ IDEA.</li>
+                    <li>If the Welcome screen opens, click New Project. Otherwise, go to File | New | Project in the
+                        main menu.</li>
+                    <li>From the list on the left, select Java. Give the project a name.</li>
+                    <li>Select Maven as the Build system and check the Add sample code.</li>
+                    <li>From the JDK list, select the latest available Oracle OpenJDK version.</li>
+                    <li>If the JDK is installed on your computer, but not defined in the IDE, select Add JDK and specify
+                        the path to the JDK home directory.</li>
+                    <li>If you don't have the necessary JDK on your computer, select Download JDK.</li>
+                    <li>Click Create.</li>
+                </ol>
+                <img src="../../images/Gettting started/First Program/01.png" alt="Create Project"
+                    class="article_screenshot">
+
+                <p>
+                    The most simple program in Java is a Hello World program where it prints "Hello World" to the
+                    screen. Below is the implementation of the program. Let’s try to understand every bit of the code
+                    step by step.
+                </p>
+
+                <img src="../../images/Gettting started/First Program/02.png" alt="Hello World"
+                    class="article_screenshot">
+
+                <h4>Output:</h4>
+                <img src="../../images/Gettting started/First Program/03.png" alt="Hello World"
+                    class="article_screenshot">
+
+            </section>
+
+            <section id="understanding_hello_program">
+                <h3>Understanding the Java Hello World Program:</h3>
+
+                <h4>Class Definition</h4>
+                <p>
+                    Every Java program must have at least one class. Here, the class is defined using the class keyword:
+                </p>
+                <img src="../../images/Gettting started/First Program/04.png" alt="Class definition"
+                    class="article_screenshot">
+
+                <h4>main Method</h4>
+                <p>
+                    In the Java programming language, every application must contain a main method as it is the entry
+                    point of the application:
+                </p>
+                <img src="../../images/Gettting started/First Program/05.png" alt="main method"
+                    class="article_screenshot">
+                <ul>
+                    <li><b>public:</b> Allows JVM to access the method from anywhere.</li>
+                    <li><b>static:</b> Method can run without creating an object.</li>
+                    <li><b>void:</b> It doesn’t return any value.</li>
+                    <li><b>String[] args:</b> Accepts command-line arguments.</li>
+                </ul>
+
+                <h4>System.out.println()</h4>
+                <p>
+                    This prints output to the console:
+                </p>
+                <img src="../../images/Gettting started/First Program/06.png" alt="Print to console"
+                    class="article_screenshot">
+                <ul>
+                    <li><b>System:</b> Built-in class from java.lang package.</li>
+                    <li><b>out:</b> Static member (PrintStream object) of System.</li>
+                    <li><b>println():</b> Method that prints to console and moves to the next line.</li>
+                </ul>
+            </section>
+
+            <h3>Watch the video below for the step-by-step tutorial on how to write a Hello World program in Java using
+                IntelliJ Idea:</h3>
+            <iframe width="600" height="600" src="https://www.youtube.com/embed/x8hjla2AAhw"
+                title="How to Create and Run a Java Project on IntelliJ IDEA | Run Java Program on IntelliJ IDEA"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <section id="references">
+                <h3>References:</h3>
+                <p>
+                    [1] “Java – Hello World Program.” GeeksforGeeks.
+                    https://www.geeksforgeeks.org/java/java-hello-world-program/ (accessed Nov. 28, 2025).
+                    <br>[2] “Run Java Applications.” JetBrains.
+                    https://www.jetbrains.com/help/idea/run-java-applications.html#crate-java-project (accessed Nov. 28,
+                    2025).
+
+
+                </p>
+            </section>
+
+            <div class="article_nav">
+                <a href="/html/Getting Started/getStarted2.html"><img src="/images/previous_article.jfif" alt=""
+                        class="previous"></a>
+                <a href="/html/Getting Started/getStarted4.html"><img src="/images/next_article.png" alt=""></a>
+            </div>
+        </article>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

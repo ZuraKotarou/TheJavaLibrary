@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Java</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <!-- HEADER natin boss eto yung navigation mismo -->
+  <header class="header">
+    <div class="header-container">
+      <img src="/images/logo.png" alt="Logo" class="logo">
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/html/Getting Started/getStartedHome.html">Get Started</a>
+        <a href="/html/Lessons/lessonsHome.html">Lessons</a>
+        <a href="/html/aboutUs.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION eto yung baba ng header yung may image and para saan itong page -->
+  <section class="hero">
+    <h1>Getting Started With Java</h1>
+  </section>
+
+
+  <h3 class="side_nav_title">Compiling and Running a <br>Java Program</h3>
+  <div class="container">
+    <aside class="sidebar">
+        <nav class="side_nav">
+          
+            <ul class="section_topics">
+                <li><a href="#command_prompt_vs_intelliJ">Compiling a Java Program Using Command Prompt vs. IntelliJ IDEA</a></li>
+                <li><a href="#compile_with_command_prompt">Compiling and Running Java Programs Using Command Prompt</a></li>
+                <li><a href="#compile_with_intellij">Compiling and Running Java Programs Using IntelliJ IDEA</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <article>
+        <h2 id="article_title">Compiling and Running a Java Program</h2>
+
+        <section id="command_prompt_vs_intelliJ">
+            <h3>Compiling a Java Program Using Command Prompt vs. IntelliJ IDEA</h3>
+            <h4>When learning Java, it is important to understand two common ways to compile and run your programs:</h4>
+            <ol>
+                <li>Using the Command Prompt (Windows) or Terminal (Mac/Linux)</li>
+                <li>Using an Integrated Development Environment (IDE) such as IntelliJ IDEA</li>
+            </ol>
+            <p>
+                Both methods achieve the same goal, but they offer different experiences and levels of control. Understanding both will help you become a more flexible and confident Java developer.
+            </p>
+        </section>
+
+        <section id="compile_with_command_prompt">
+            <h3>Compiling and Running Java Programs Using Command Prompt</h3>
+            <p>
+                Even though IDEs provide built-in tools for compiling and running Java programs, Java can also be executed directly from the command line. This method gives you a deeper understanding of how Java works behind the scenes.
+            </p>
+
+            <h4>Save Your Java Program</h4>
+            <img src="../../images/Gettting started/Compiling Program/01.jfif" alt="Save Java Program" class="article_screenshot">
+            <p>Use a text editor (e.g., Notepad) or any IDE to write your .java file.</p>
+            <ul>
+                <li>The filename must match the class name containing the main() method.</li>
+                <li>Save it with the extension .java (e.g., Main.java).</li>
+                <li>Remember the folder where you saved the file.</li>
+            </ul>
+
+            <h4>Open Command Prompt or Terminal</h4>
+            <img src="../../images/Gettting started/Compiling Program/02.jfif" alt="Open Terminal" class="article_screenshot">
+            <ul>
+                <li>Windows: Open Start Menu → Type CMD → Press Enter.</li>
+                <li>Mac: Finder → Go → Applications → Utilities → Terminal.</li>
+            </ul>
+
+            <h4>Navigate to Your File Location</h4>
+            <p>Use the Java compiler <b>(javac):</b></p>
+            <img src="../../images/Gettting started/Compiling Program/03.jfif" alt="Navigate File Location" class="article_screenshot">
+            <p>
+                If there are syntax errors, the compiler will display them and stop until you fix them.
+            </p>
+
+            <h4>Compile the Program</h4>
+            <p>Use the Java compiler <b>(javac):</b></p>
+            <img src="../../images/Gettting started/Compiling Program/04.jfif" alt="Compile Program" class="article_screenshot">
+            <p>
+                If there are syntax errors, the compiler will display them and stop until you fix them.
+            </p>
+
+            <h4>Run the Compiled Program</h4>
+            <p>Once compiled, run it with:</p>
+            <img src="../../images/Gettting started/Compiling Program/05.jfif" alt="Compile Program" class="article_screenshot">
+            <p>
+                (Do not type .java here.)
+                <br>If everything is correct, your program will execute and show its output in the command line
+            </p>
+
+            <h4>Below is a video on how to compile and run java programs using cmd:</h4>
+            <iframe width="600" height="600" src="https://www.youtube.com/embed/wk5C-GzVk-o" title="How to compile and run java program in cmd using notepad." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="compile_with_intellij">
+            <h3>Compiling and Running Java Programs Using IntelliJ IDEA</h3>
+            <p>
+                IntelliJ IDEA simplifies the entire process of writing, compiling, and running Java programs. It performs all compilation steps behind the scenes with a single click.
+            </p>
+            <h4>Run the Application</h4>
+            <img src="../../images/Gettting started/Compiling Program/06.png" alt="Run application">
+            <h5>To run your program:</h5>
+            <ul>
+                <li>Click the green play gutter icon beside the main() method</li>
+                <li>Select Run ‘Main.main()’</li>
+            </ul>
+            <p>
+                IntelliJ compiles your code automatically—no need to type javac or java.
+            </p>
+
+            <h4>View Output</h4>
+            <p>The result appears in the Run tool window at the bottom.</p>
+            <img src="../../images/Gettting started/Compiling Program/07.png" alt="View Output">
+            <h5>If the program executes successfully, you’ll see:</h5>
+            <p>
+                Process finished with exit code 0
+                <br><br>which means no errors occurred.
+            </p>
+
+        </section>
+        
+        <section id="references">
+            <h3>References:</h3>
+            <p>
+                [1] “Run Java Applications (saved configuration).” JetBrains. https://www.jetbrains.com/help/idea/run-java-applications.html#run_saved_configuration (accessed Nov. 28, 2025).
+                <br>[2] “How to Compile & Run Java Program Using Command Prompt.” wikiHow. https://www.wikihow.com/Compile-%26-Run-Java-Program-Using-Command-Prompt (accessed Nov. 28, 2025).
+
+
+            </p>
+        </section>
+
+        <div class="article_nav">
+                <a href="/html/Getting Started/getStarted3.html"><img src="/images/previous_article.jfif" alt=""
+                        class="previous"></a>
+            </div>
+    </article>
+
+  </div>
+
+
+
+
+    
+
+</body>
+</html>

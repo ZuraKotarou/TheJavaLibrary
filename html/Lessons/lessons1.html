@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Lessons</title>
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+
+<body>
+    <!-- HEADER natin boss eto yung navigation mismo -->
+    <header class="header">
+    <div class="header-container">
+      <img src="/images/logo.png" alt="Logo" class="logo">
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/html/Getting Started/getStartedHome.html">Get Started</a>
+        <a href="/html/Lessons/lessonsHome.html">Lessons</a>
+        <a href="/html/aboutUs.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- HERO SECTION eto yung baba ng header yung may image and para saan itong page -->
+    <section class="hero">
+        <h1>JAVA Lesson 1</h1>
+    </section>
+
+
+    <h3 class="side_nav_title">Java Lesson 1: <br>Basic Syntax</h3>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="side_nav">
+                <ul class="section_topics">
+                    <li><a href="#comments">Comments</a></li>
+                    <li><a href="#printing">Printing</a></li>
+                    <li><a href="#access_modifiers">Access Modifiers</a></li>
+                    <li><a href="#scanner">User Input(Scanner)</a></li>
+                    <li><a href="#methods">Methods</a></li>
+                    <li><a href="#variables">Variables</a></li>
+                    <li><a href="#conditional">Conditional Statements</a></li>
+                    <li><a href="#comparison_logical">Comparison and Logical Operations</a></li>
+                    <li><a href="#arithmetic">Arithmetic Operators</a></li>
+                    <li><a href="#string_methods">String Methods</a></li>
+                    <li><a href="#loops">Loops</a></li>
+                    <li><a href="#break_continue">Break and Continue</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#lesson_examination">Lesson Examination</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+
+
+        <article>
+            <h2 id="article_title">JAVA BASIC SYNTAX</h2>
+            <p>
+                Java Syntax is a set of rules that governs how Java programs must be written so that the compiler can
+                properly read and interpret them. Following these defined rules is crucial for ensuring that the code is
+                logically correct, readable, and free of grammatical errors. Understanding this syntax is the foundation
+                for writing any Java program, such as a basic "Hello World" application.
+            </p>
+
+            <section id="comments">
+                <h3>COMMENTS:</h3>
+                <p>
+                    Comments can be used to explain Java code, and to make it more readable. It can also be used to
+                    prevent execution when testing alternative code because comments are not executed by the computer.
+                </p>
+                <h4>There are two types of comments in Java:</h4>
+                <h5>Inline</h5>
+                <img src="../../images/Lessons/Lesson 1/01.png" alt="Inline" class="article_screenshot">
+                <h5>Block</h5>
+                <img src="../../images/Lessons/Lesson 1/02.png" alt="Block" class="article_screenshot">
+            </section>
+
+            <section id="printing">
+                <h3>PRINTING:</h3>
+                <p>
+                    You can display text using System.out.print() or System.out.println(). The println() method
+                    automatically moves the cursor to a new line after printing.
+                </p>
+                <h4>System.out.print()</h4>
+                <img src="../../images/Lessons/Lesson 1/03.png" alt="System.out.print()" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/04.png" alt="System.out.print()" class="article_screenshot">
+                <h4>System.out.println()</h4>
+                <img src="../../images/Lessons/Lesson 1/05.png" alt="System.out.print()" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/06.png" alt="System.out.print()" class="article_screenshot">
+
+            </section>
+
+            <section id="access_modifiers">
+                <h3>ACCESS MODIFIERS:</h3>
+                <p>
+                    Access modifiers are used to set the access level for classes, attributes, methods and constructors.
+                    There are three (4) access modifiers we can use:
+                </p>
+
+                <h4>public</h4>
+                <p>
+                    The code is accessible for all classes
+                </p>
+
+                <h4>private</h4>
+                <p>
+                    The code is only accessible within the declared class
+                </p>
+
+                <h4>default</h4>
+                <p>
+                    The code is only accessible in the same package. This is used when you don't specify a modifier.
+                </p>
+
+                <h4>protected</h4>
+                <p>
+                    The code is accessible in the same package and subclasses. You will learn more about subclasses and
+                    superclasses in the OOP chapter
+                </p>
+
+                <img src="../../images/Lessons/Lesson 1/07.png" alt="ACCESS MODIFIERS" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/08.png" alt="ACCESS MODIFIERS" class="article_screenshot">
+
+                <h4>Below is a video that explains Scanner in detail:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/T632kAJ_9VA"
+                    title="Java access modifiers: (public, protected, private) 🔒" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="scanner">
+                <h3>User Input (Scanner):</h3>
+                <p>
+                    The Scanner class lets your program read input from the user. It is located in the java.util
+                    package, so you need to import it before using it.
+
+                    <br><br>To use a Scanner, you first create a Scanner object, and then you can call its different
+                    methods to read different kinds of input.
+
+                    <br><br>In this example, we will use nextLine(), a method that reads a whole line of text (a String)
+                    from the user.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/09.png" alt="Scanner" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/10.png" alt="Scanner" class="article_screenshot">
+
+                <h4>Below is a video that explains Scanner in detail:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/wAEPokhj5Q4"
+                    title="How to accept user input in Java ⌨️【8 minutes】" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="methods">
+                <h3>METHODS:</h3>
+                <p>
+                    A method is a reusable block of code designed to perform a specific task, and it can be called
+                    anytime within a program.
+                </p>
+
+                <img src="../../images/Lessons/Lesson 1/11.png" alt="Methods" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/12.png" alt="Methods" class="article_screenshot">
+
+                <h4>Below is a video that explains methods in detail:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/v5p_SUfi710"
+                    title="Java methods explained in 10+ minutes! 📞" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="variables">
+                <h3>VARIABLES:</h3>
+                <p>
+                    Variables are used to name, store, and access different kinds of data in a program.
+                </p>
+
+                <h4>VARIABLE TYPES:</h4>
+                <p><b>Primitive</b> data types are built-in and include int, double, boolean, and char.</p>
+                <p><b>Non-Primitive/Reference</b> data types store references to objects, with String being a common
+                    example. As opposed to primitive data types, non-primitive can contain methods and variables.</p>
+
+                <h4>DECLARING A VARIABLE:</h4>
+                <h5>To create a variable in Java, you need to:</h5>
+                <ul>
+                    <li>Choose a type (like int or String)</li>
+                    <li>Give the variable a name (like x, age, or name)</li>
+                    <li>Optionally assign it a value using the assignment operator ( =)</li>
+                </ul>
+                <img src="../../images/Lessons/Lesson 1/13.png" alt="Declaring Variables" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/14.png" alt="Declaring Variables" class="article_screenshot">
+
+                <h4>MANIPULATING NUMBER VARIABLES:</h4>
+                <p>
+                    You can perform various mathematical operations on numeric data types such as int, double, and
+                    float.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/15.png" alt="Manipulating Variables" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/16.png" alt="Manipulating  Variables"
+                    class="article_screenshot">
+
+                <h4>Below is a video explaining variables in detail:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/so1iUWaLmKA"
+                    title="Variables in Java ✘【12 minutes】" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="conditional">
+                <h3>CONDITIONAL STATEMENTS:</h3>
+                <p>
+                    In Java, conditional statements run specific blocks of code depending on whether a given boolean
+                    expression evaluates to true or false.
+                </p>
+
+                <h4>If</h4>
+                <p>
+                    The most basic conditional statement. It executes a block of code only if a specified condition
+                    evaluates to true. If the condition is false, the code block is skipped.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/17.png" alt="If" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/18.png" alt="If" class="article_screenshot">
+
+                <h4>else</h4>
+                <p>
+                    The optional counterpart to the if statement. The else block of code is executed only when the if
+                    condition (and any preceding else if conditions) evaluates to false. It provides a default path of
+                    execution.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/20.png" alt="Else" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/19.png" alt="Else" class="article_screenshot">
+
+                <h4>else if</h4>
+                <p>
+                    A way to test multiple conditions sequentially. If the initial if condition is false, the program
+                    checks the next else if condition. This process continues until a true condition is found, and its
+                    corresponding code block is executed. If a condition is true, the rest of the else if and the final
+                    else blocks are skipped.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/21.png" alt="Else If" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/22.png" alt="Else If" class="article_screenshot">
+
+                <h4>Watch the video below for a more detailed explanation on if and else if statements:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/MY03bt_0JQI"
+                    title="Java if statements 🚧【6 minutes】" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h4>Nested If</h4>
+                <p>
+                    This occurs when one if statement is placed entirely inside the code block of another if or else if
+                    statement. It is used to test a secondary, more specific condition only after the primary, outer
+                    condition has already been met.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/23.png" alt="Nested If" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/24.png" alt="Nested If" class="article_screenshot">
+
+                <h4>Watch the video below for a more detailed explanation on nested if statements:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/23VT2wh3BG4"
+                    title="Nested if statements are easy! 🎟️" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h4>switch case</h4>
+                <p>
+                    A switch statement evaluates a single expression (often a variable). The result of this expression
+                    is then compared sequentially against a list of predefined case values.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/25.png" alt="switch case" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/26.png" alt="switch case" class="article_screenshot">
+
+                <h4>Watch the video below for a more detailed explanation on switch case statements:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/Om3qzMoaIUo"
+                    title="Java switch ⬇【4 minutes】" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="comparison_logical">
+                <h3>COMPARISON AND LOGICAL OPERATIONS:</h3>
+                <p>
+                    Essential tools in programming that evaluate relationships between values or combine boolean results
+                    to determine a final true or false value.
+                </p>
+
+                <h4>&& (AND)</h4>
+                <p>
+                    Returns true if both statements are true.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/27.png" alt="AND" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/28.png" alt="AND" class="article_screenshot">
+
+                <h4>|| (OR)</h4>
+                <p>
+                    Returns true if one of the statements is true.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/29.png" alt="OR" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/30.png" alt="OR" class="article_screenshot">
+
+                <h4>! (NOT)</h4>
+                <p>
+                    Reverse the result, returns false if the result is true.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/31.png" alt="NOT" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/32.png" alt="NOT" class="article_screenshot">
+
+                <h4>Watch the video below for a more detailed explanation on logical operators:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/919IUhotDCo"
+                    title="Java logical operators ❗ (AND OR NOT)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h4>&gt (Greater Than)</h4>
+                <p>
+                    Tests if the left value is greater than right
+                </p>
+                <img src="../../images/Lessons/Lesson 1/33.png" alt="Greather than" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/34.png" alt="Greather than" class="article_screenshot">
+
+                <h4>&lt (Less Than)</h4>
+                <p>
+                    Tests if the left value is less than the right
+                </p>
+                <img src="../../images/Lessons/Lesson 1/35.png" alt="Less than" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/36.png" alt="Less than" class="article_screenshot">
+
+                <h4>== (Equality)</h4>
+                <p>
+                    Tests if two values are equal
+                </p>
+                <img src="../../images/Lessons/Lesson 1/37.png" alt="Equality" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/38.png" alt="Equality" class="article_screenshot">
+
+                <h4>= (Assignment Operator)</h4>
+                <p>
+                    Assigns a value to a variable
+                </p>
+                <img src="../../images/Lessons/Lesson 1/39.png" alt="Assignment" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/40.png" alt="Assignment" class="article_screenshot">
+
+                <h4>Watch the video below for a more detailed explanation on logical operators:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/jRdPsDjW8DY"
+                    title="How To Use Comparison Operators In Java #16" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="arithmetic">
+                <h3>Arithmetic Operators</h3>
+                <p>
+                    A symbol or set of symbols that instructs a computer to perform a mathematical calculation (such as
+                    addition, subtraction, multiplication, or division) on one or more values or variables (called
+                    operands).
+                </p>
+
+                <h4>+ (Addition)</h4>
+                <p>
+                    Adds two numeric values
+                </p>
+                <img src="../../images/Lessons/Lesson 1/41.png" alt="Addition" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/42.png" alt="Addition" class="article_screenshot">
+
+                <h4>- (Subtraction)</h4>
+                <p>
+                    Subtracts the right operand from the left
+                </p>
+                <img src="../../images/Lessons/Lesson 1/43.png" alt="Subtraction" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/44.png" alt="Subtraction" class="article_screenshot">
+
+                <h4>* (Multiplication)</h4>
+                <p>
+                    Multiplies two numeric values
+                </p>
+                <img src="../../images/Lessons/Lesson 1/45.png" alt="Multiplication" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/46.png" alt="Multiplication" class="article_screenshot">
+
+                <h4>/ (Division)</h4>
+                <p>
+                    Divides the left operand by the right
+                </p>
+                <img src="../../images/Lessons/Lesson 1/47.png" alt="Division" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/48.png" alt="Division" class="article_screenshot">
+
+                <h4>% (Modulus)</h4>
+                <p>
+                    Returns the remainder of division
+                </p>
+                <img src="../../images/Lessons/Lesson 1/49.png" alt="Modulus" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/50.png" alt="Modulus" class="article_screenshot">
+
+                <h4>++ (Increment)</h4>
+                <p>
+                    Increases the value of a variable by 1
+                </p>
+                <img src="../../images/Lessons/Lesson 1/51.png" alt="Increment" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/52.png" alt="Increment" class="article_screenshot">
+
+                <h4>-- (Decrement)</h4>
+                <p>
+                    Decreases the value of a variable by 1
+                </p>
+                <img src="../../images/Lessons/Lesson 1/53.png" alt="Decrement" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/54.png" alt="Decrement" class="article_screenshot">
+
+                <h4>Watch the video below for a more detailed explanation on arithmetic operators:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/QAD5unRlCyo"
+                    title="Java arithmetic is easy! 🧮" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="string_methods">
+                <h3>STRING METHODS:</h3>
+                <p>
+                    The Java String class provides several built-in methods that allow programmers to effectively
+                    manipulate and query textual data.
+                </p>
+
+                <h4>These methods include:</h4>
+                <h5>.length()</h5>
+                <p>
+                    Returns the total number of characters (the length) in the string.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/55.png" alt="length" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/56.png" alt="length" class="article_screenshot">
+
+                <h5>.concat()</h5>
+                <p>
+                    Joins the current string with another specified string, creating a new combined string.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/57.png" alt="concatenation" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/58.png" alt="concatenation" class="article_screenshot">
+
+                <h5>.equals()</h5>
+                <p>
+                    Compares the contents of two strings to check if they are identical, returning a boolean (true or
+                    false).
+                </p>
+                <img src="../../images/Lessons/Lesson 1/59.png" alt="equals" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/60.png" alt="equals" class="article_screenshot">
+
+                <h5>.indexOf()</h5>
+                <p>
+                    Locates and returns the index position of the first occurrence of a specified character or
+                    substring. The counting of index always starts from zero (0).
+                </p>
+                <img src="../../images/Lessons/Lesson 1/61.png" alt="index of" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/62.png" alt="index of" class="article_screenshot">
+
+                <h5>.charAt()</h5>
+                <p>
+                    Returns the single character found at a specific, given index position.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/63.png" alt="character at" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/64.png" alt="character at" class="article_screenshot">
+
+                <h4>Watch the video below for additional reference on String methods:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/P9hEmbfdiuc"
+                    title="Java String methods 💬" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="loops">
+                <h3>LOOPS:</h3>
+                <p>
+                    Java uses four primary types of loops to repeatedly execute a block of code based on a boolean
+                    condition until that condition evaluates to false.
+                </p>
+
+                <h4>while Loop</h4>
+                <p>
+                    The while loop checks the boolean condition before executing the loop's body. The code inside the
+                    loop will execute zero or more times.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/65.png" alt="while loop" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/66.png" alt="while loop" class="article_screenshot">
+
+                <h4>do-while Loop</h4>
+                <p>
+                    The do-while loop executes the loop's body at least once before checking the boolean condition. The
+                    condition is checked only after the first iteration.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/67.png" alt="do-while Loop" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/68.png" alt="do-while Loop" class="article_screenshot">
+
+                <h4>for Loop</h4>
+                <p>
+                    The for loop is typically used when the number of iterations is known. It combines the
+                    initialization, condition check, and iteration update into a single, compact statement.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/69.png" alt="for Loop" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/70.png" alt="for Loop" class="article_screenshot">
+
+                <h4>for-each Loop (Enhanced for Loop)</h4>
+                <p>
+                    The for-each loop is designed for easy iteration over arrays and collections. It simplifies the
+                    process of stepping through every element without needing to manage index variables.
+                </p>
+                <img src="../../images/Lessons/Lesson 1/71.png" alt="for-each Loop (Enhanced for Loop)"
+                    class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/72.png" alt="for-each Loop (Enhanced for Loop)"
+                    class="article_screenshot">
+
+
+                <h4>Watch the video below for a more detailed explanation on loops:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/vOmZ4JFhRds"
+                    title="Java for loops are easy! 🔂" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="break_continue">
+                <h3>BREAK AND CONTINUE:</h3>
+                <p>
+                    The Java keywords break and continue provide precise control over the flow and iteration of loops.
+                </p>
+
+                <h4>break Keyword</h4>
+                <p>
+                    The break keyword is used to immediately terminate the innermost loop (or switch statement) in which
+                    it is executed.
+                <ul>
+                    <li>When break is encountered, the program exits the loop entirely, and execution resumes with the
+                        statement immediately following the loop's closing curly brace.</li>
+                </ul>
+                </p>
+
+                <img src="../../images/Lessons/Lesson 1/73.png" alt="break" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/74.png" alt="break" class="article_screenshot">
+
+                <h4>continue Keyword</h4>
+                <p>
+                    The continue keyword is used to skip the current iteration of a loop and immediately proceed to the
+                    next iteration.
+                <ul>
+                    <li>When continue is encountered, any remaining code within the loop body for that iteration is
+                        skipped.</li>
+                    <li>For a for loop, execution jumps to the update/increment part.</li>
+                    <li>For while and do-while loops, execution jumps directly back to the condition check.</li>
+                </ul>
+                </p>
+
+                <img src="../../images/Lessons/Lesson 1/75.png" alt="continue" class="article_screenshot">
+                <img src="../../images/Lessons/Lesson 1/76.png" alt="continue" class="article_screenshot">
+
+                <p>
+                    These two keywords are primarily used inside conditional blocks (if) within a loop to handle
+                    specific conditions.
+                </p>
+
+                <h4>Watch the video below for a more detailed explanation on break and continue statements:</h4>
+                <iframe width="600" height="600" src="https://www.youtube.com/embed/iGo1Syv4YuM"
+                    title="Learn BREAK &amp; CONTINUE in 2 minutes! 🚦" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="references">
+                <h3>References:</h3>
+                <p>
+                    [1] “Basic Syntax in Java.” Codecademy.
+                    https://www.codecademy.com/learn/java-for-programmers/modules/java-for-programmers-basic-syntax/cheatsheet
+                    (accessed Nov. 27, 2025).
+                    <br>[2] “Java Modifiers.” W3Schools. https://www.w3schools.com/java/java_modifiers.asp (accessed 27,
+                    2025).
+                    <br>[3] “Java User Input (Scanner class).” W3Schools.
+                    https://www.w3schools.com/java/java_user_input.asp (accessed Nov. 27, 2025).
+                    <br>[4] “Java Arithmetic Operators.” W3Schools.
+                    https://www.w3schools.com/java/java_operators_arithmetic.asp (accessed Nov. 27, 2025).
+                    <br>[5] “Java Programming Basics.” GeeksforGeeks.
+                    https://www.geeksforgeeks.org/java/java-programming-basics/ (accessed Nov. 27, 2025).
+                    <br>[6] “Conditional Statements in Programming.” GeeksforGeeks.
+                    https://www.geeksforgeeks.org/dsa/conditional-statements-in-programming/ (accessed Nov. 27, 2025).
+                </p>
+            </section>
+
+            <section id="lesson_examination">
+                <h3>Lesson Examination</h3>
+                <form id="quizForm1">
+                    <div class="question">
+                        <p>Java comments have no effect on the program’s output.</p>
+                        <div class="choice">
+                            <input type="radio" name="q1" value="True" id="q1true">
+                            <label for="q1true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q1" value="False" id="q1false">
+                            <label for="q1false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>System.out.print() automatically moves the cursor to the next line after printing.</p>
+                        <div class="choice">
+                            <input type="radio" name="q2" value="True" id="q2true">
+                            <label for="q2true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q2" value="False" id="q2false">
+                            <label for="q2false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>A method in Java can be reused multiple times by calling it.</p>
+                        <div class="choice">
+                            <input type="radio" name="q3" value="True" id="q3true">
+                            <label for="q3true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q3" value="False" id="q3false">
+                            <label for="q3false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>The String data type is a primitive data type.</p>
+                        <div class="choice">
+                            <input type="radio" name="q4" value="True" id="q4true">
+                            <label for="q4true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q4" value="False" id="q4false">
+                            <label for="q4false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>The modulus operator (%) returns the remainder of a division.</p>
+                        <div class="choice">
+                            <input type="radio" name="q5" value="True" id="q5true">
+                            <label for="q5true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q5" value="False" id="q5false">
+                            <label for="q5false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>The expression a = b checks whether a is equal to b.</p>
+                        <div class="choice">
+                            <input type="radio" name="q6" value="True" id="q6true">
+                            <label for="q6true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q6" value="False" id="q6false">
+                            <label for="q6false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>The switch statement can be used as an alternative to long chains of if-else-if.</p>
+                        <div class="choice">
+                            <input type="radio" name="q7" value="True" id="q7true">
+                            <label for="q7true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q7" value="False" id="q7false">
+                            <label for="q7false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>The .equals() method compares the memory address of two strings.</p>
+                        <div class="choice">
+                            <input type="radio" name="q8" value="True" id="q8true">
+                            <label for="q8true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q8" value="False" id="q8false">
+                            <label for="q8false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>A for loop will always execute at least once.</p>
+                        <div class="choice">
+                            <input type="radio" name="q9" value="True" id="q9true">
+                            <label for="q9true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q9" value="False" id="q9false">
+                            <label for="q9false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>The keyword break exits only the current iteration of a loop.</p>
+                        <div class="choice">
+                            <input type="radio" name="q10" value="True" id="q10true">
+                            <label for="q10true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q10" value="False" id="q10false">
+                            <label for="q10false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>The main method is the entry point of every Java program.</p>
+                        <div class="choice">
+                            <input type="radio" name="q11" value="True" id="q11true">
+                            <label for="q11true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q11" value="False" id="q11false">
+                            <label for="q11false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Logical AND (&&) returns true when both operands are true.</p>
+                        <div class="choice">
+                            <input type="radio" name="q12" value="True" id="q12true">
+                            <label for="q12true">True</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q12" value="False" id="q12false">
+                            <label for="q12false">False</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which of the following is a valid inline comment?</p>
+                        <div class="choice">
+                            <input type="radio" name="q13" value="A" id="q13a">
+                            <label for="q13a">/* comment */</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q13" value="B" id="q13b">
+                            <label for="q13b">// comment</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q13" value="C" id="q13c">
+                            <label for="q13c">&lt;!-- comment --&gt;</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q13" value="D" id="q13d">
+                            <label for="q13d">{ comment }</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which is true about Java syntax rules?</p>
+                        <div class="choice">
+                            <input type="radio" name="q14" value="A" id="q14a">
+                            <label for="q14a">They’re optional.</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q14" value="B" id="q14b">
+                            <label for="q14b">They ensure the compiler understands the code.</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q14" value="C" id="q14c">
+                            <label for="q14c">They are used only when printing output.</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q14" value="D" id="q14d">
+                            <label for="q14d">They apply only to methods.</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What does System.out.println("Hello"); do?</p>
+                        <div class="choice">
+                            <input type="radio" name="q15" value="A" id="q15a">
+                            <label for="q15a">Prints Hello without a newline</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q15" value="B" id="q15b">
+                            <label for="q15b">Prints Hello with a newline</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q15" value="C" id="q15c">
+                            <label for="q15c">Prints Hello twice</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q15" value="D" id="q15d">
+                            <label for="q15d">Does nothing</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What will be printed?</p>
+                        <img src="../../images/Lessons/Lesson 1/Quiz/16.png" alt="">
+                        <div class="choice">
+                            <input type="radio" name="q16" value="A" id="q16a">
+                            <label for="q16a">Hi</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q16" value="B" id="q16b">
+                            <label for="q16b">Hi!</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q16" value="C" id="q16c">
+                            <label for="q16c">Hi !</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q16" value="D" id="q16d">
+                            <label for="q16d">Hi! (in two lines)</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which is NOT a primitive data type?</p>
+                        <div class="choice">
+                            <input type="radio" name="q17" value="A" id="q17a">
+                            <label for="q17a">boolean</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q17" value="B" id="q17b">
+                            <label for="q17b">int</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q17" value="C" id="q17c">
+                            <label for="q17c">char</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q17" value="D" id="q17d">
+                            <label for="q17d">String</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What is the correct way to declare a double variable?</p>
+                        <div class="choice">
+                            <input type="radio" name="q18" value="A" id="q18a">
+                            <label for="q18a">double x = 5.9;</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q18" value="B" id="q18b">
+                            <label for="q18b">Double x = "5.9";</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q18" value="C" id="q18c">
+                            <label for="q18c">double x = "5.9";</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q18" value="D" id="q18d">
+                            <label for="q18d">num x = 5.9;</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What is the output of:</p>
+                        <img src="../../images/Lessons/Lesson 1/Quiz/19.png" alt="">
+                        <div class="choice">
+                            <input type="radio" name="q19" value="A" id="q19a">
+                            <label for="q19a">4</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q19" value="B" id="q19b">
+                            <label for="q19b">5</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q19" value="C" id="q19c">
+                            <label for="q19c">6</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q19" value="D" id="q19d">
+                            <label for="q19d">Error</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What operator is used for multiplication?</p>
+                        <div class="choice">
+                            <input type="radio" name="q20" value="A" id="q20a">
+                            <label for="q20a">*</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q20" value="B" id="q20b">
+                            <label for="q20b">x</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q20" value="C" id="q20c">
+                            <label for="q20c">mul</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q20" value="D" id="q20d">
+                            <label for="q20d">#</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which operator checks equality?</p>
+                        <div class="choice">
+                            <input type="radio" name="q21" value="A" id="q21a">
+                            <label for="q21a">=</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q21" value="B" id="q21b">
+                            <label for="q21b">==</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q21" value="C" id="q21c">
+                            <label for="q21c">===</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q21" value="D" id="q21d">
+                            <label for="q21d">&lt;&gt;</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Which loop is used when the number of iterations is known?</p>
+                        <div class="choice">
+                            <input type="radio" name="q22" value="A" id="q22a">
+                            <label for="q22a">for</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q22" value="B" id="q22b">
+                            <label for="q22b">while</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q22" value="C" id="q22c">
+                            <label for="q22c">do-while</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q22" value="D" id="q22d">
+                            <label for="q22d">switch</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What is the output?</p>
+                        <img src="../../images/Lessons/Lesson 1/Quiz/23.png" alt="">
+                        <div class="choice">
+                            <input type="radio" name="q23" value="A" id="q23a">
+                            <label for="q23a">3</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q23" value="B" id="q23b">
+                            <label for="q23b">1</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q23" value="C" id="q23c">
+                            <label for="q23c">0</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q23" value="D" id="q23d">
+                            <label for="q23d">10</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What is the output?</p>
+                        <img src="../../images/Lessons/Lesson 1/Quiz/24.png" alt="">
+                        <div class="choice">
+                            <input type="radio" name="q24" value="A" id="q24a">
+                            <label for="q24a">0 1 2</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q24" value="B" id="q24b">
+                            <label for="q24b">0 2</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q24" value="C" id="q24c">
+                            <label for="q24c">1 2</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q24" value="D" id="q24d">
+                            <label for="q24d">0 1</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>What does continue do in a loop?</p>
+                        <div class="choice">
+                            <input type="radio" name="q25" value="A" id="q25a">
+                            <label for="q25a">Exits the loop</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q25" value="B" id="q25b">
+                            <label for="q25b">Skips to the next iteration</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q25" value="C" id="q25c">
+                            <label for="q25c">Stops the program</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="q25" value="D" id="q25d">
+                            <label for="q25d">Repeats the last iteration</label>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="checkAnswers('quizForm1', LessonOneAnswers)"
+                        id="submit_button">Submit</button>
+                </form>
+            </section>
+
+            <div class="article_nav">
+                <a href="/html/Lessons/lessonsHome.html"><img src="/images/back_article_list.png" alt=""></a>
+                <a href="/html/Lessons/lessons2.html"><img src="/images/next_article.png" alt=""></a>
+            </div>
+
+        </article>
+
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

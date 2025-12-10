@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Lessons</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- HEADER natin boss eto yung navigation mismo -->
+  <header class="header">
+    <div class="header-container">
+      <img src="/images/logo.png" alt="Logo" class="logo">
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/html/Getting Started/getStartedHome.html">Get Started</a>
+        <a href="/html/Lessons/lessonsHome.html">Lessons</a>
+        <a href="/html/aboutUs.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION eto yung baba ng header yung may image and para saan itong page -->
+  <section class="hero">
+    <h1>JAVA Lesson 4</h1>
+  </section>
+
+  <h3 class="side_nav_title">Java Lesson 4: <br>Introduction to OOP Concepts</h3>
+  <div class="container">
+    <aside class="sidebar">
+      <nav class="side_nav">
+        <ul class="section_topics">
+          <li><a href="#oop">OOP</a></li>
+          <li><a href="#attributes">Attributes</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#class">Class</a></li>
+          <li><a href="#object">Object</a></li>
+          <li>OOP Main Principles</li>
+          <ol>
+            <li><a href="#encapsulation">Encapsulation</a></li>
+            <li><a href="#inheritance">Inheritance</a></li>
+            <li><a href="#polymorphism">Polymorphism</a></li>
+            <li><a href="#abstraction">Abstraction</a></li>
+          </ol>
+          <li><a href="#references">References</a></li>
+          <li><a href="#lesson_examination">Lesson Examination</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <article>
+      <h2 id="article_title">Introduction to OOP Concepts</h2>
+      <section id="oop">
+        <h3>OOP</h3>
+        <p>
+          OOP stands for Object-Oriented Programming.
+          <br>If you've never used an object-oriented programming language before, you'll need to learn a few basic
+          concepts before you can begin writing any code.
+
+          <br><br>This article will discuss the basics of OOP such as the attributes and methods, class, and object.
+          <br>And the main principles of OOP such as Encapsulation, Inheritance, abstraction, and polymorphism.
+        </p>
+        <h3>Watch this video from Programming with mosh to understand OOP in simplified form.</h3>
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/pTB0EiLXUC8"
+          title="Object-Oriented Programming, Simplified" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section id="attributes">
+        <h3>What are attributes?</h3>
+        <p>
+          Attributes – the data or characteristics
+
+          <br><br>In java attributes, also known as fields or member variables, are variables declared within a class.
+          These attributes define the properties or state of an object created from the class. Understanding class
+          attributes is fundamental for object-oriented programming in Java.
+
+          <br><br>Look at this image as an example.
+        </p>
+        <img src="../../images/Lessons/Lesson 4/attributes.png" alt="Attributes" class="article_screenshot">
+
+        <p>
+          Class attributes are utilized to maintain information that pertains to a particular object.
+
+          <br><br>Example code on how to create attributes in the class Car.
+        </p>
+        <img src="../../images/Lessons/Lesson 4/attributes_example.png" alt="Attributes Example"
+          class="article_screenshot">
+      </section>
+
+      <section id="methods">
+        <h3>What are methods</h3>
+        <p>
+          Methods - The Actions / Behaviors
+          <br>Methods are actions that objects can perform.. They define what an object can do.
+          <br>A method typically has:
+        </p>
+        <ul>
+          <li><b>Return type</b> – what value it gives back (int, String, void, etc.)</li>
+          <li><b>Method name</b> – the identifier used to call it</li>
+          <li><b>Parameters</b> – (optional) values passed into the method</li>
+          <li><b>Method body</b> – the code that runs when the method is called</li>
+        </ul>
+        <p>
+          A method in Java is a block of code that, when called, performs specific actions mentioned in it. For
+          instance, if you have written instructions to draw a circle in the method, it will do that task. You can
+          insert values or parameters into methods, and they will only be executed when called. They are also referred
+          to as functions.
+          <br>Take this block of code as an example,
+        </p>
+        <img src="../../images/Lessons/Lesson 4/method Demo.png" alt="Methods" class="article_screenshot">
+        <h3>To learn more about methods watch this video from Bro Code</h3>
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/v5p_SUfi710"
+          title="Java methods explained in 10+ minutes! 📞" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section id="class">
+        <h3>What is Class?</h3>
+        <p>
+          A class is a blueprint or prototype from which objects are created. This section defines a class that models
+          the state and behavior of a real-world object. It intentionally focuses on the basics, showing how even a
+          simple class can cleanly model state and behavior.
+          <br>A class defines:
+        </p>
+        <ul>
+          <li><b>Attributes</b> - the data stored (like name, age)</li>
+          <li><b>Methods</b> - the actions the class can perform (like bark(), run(), eat())</li>
+        </ul>
+        <h3>Here is a video on how to create a class from Neso Academy,</h3>
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/EplETikbJis"
+          title="Creating a Class in Java" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p>
+          Programmers eventually discovered that it makes a program clearer and easier to understand if they were able
+          to take a bunch of data and group it together with the functions that worked on that data. Such a grouping
+          data and functions are called class and object. And writing programs by using classes is known as object
+          oriented programming. 
+
+          <br><br>Take this block of code as an example without objects.
+        </p>
+        <img src="../../images/Lessons/Lesson 4/with_object.png" alt="Class" class="article_screenshot">
+        <p>Now another example with objects included,</p>
+        <img src="../../images/Lessons/Lesson 4/with_object.png" alt="Class" class="article_screenshot">
+
+        <p>
+          In Java, a class is like a blueprint for creating objects. It defines the attributes, which are pieces of
+          information that describe the object, and methods, which are actions the object can perform. For example, a
+          Car class can have attributes like brand, color, and year, and methods like startEngine() and showDetails().
+
+          <br><br>An object is a real instance created from the class. Each object can have its own values for the
+          attributes while sharing the same methods. For instance, creating a Car object called myCar allows us to set
+          its brand to "Toyota", color to "Red", and year to 2020. By calling myCar.startEngine() or
+          myCar.showDetails(), the object performs actions defined in the class.
+
+          <br><br>In short, the class provides the structure, and the object is the actual thing we use in the program.
+          This separation of blueprint and instance is fundamental to object-oriented programming, making programs
+          easier to understand and organize.
+        </p>
+
+        <h3>To learn more about classes and objects watch this video from keep on coding</h3>
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/IUqKuGNasdM"
+          title="Java Classes &amp; Objects" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section id="object">
+        <h3>What is an Object?</h3>
+        <h4>Key Features of Objects:</h4>
+        <ol>
+          <li><b>Attributes (Fields):</b> Describe the state of an object.</li>
+          <li><b>Methods:</b> Define what an object can do.</li>
+          <li><b>Instantiation:</b> Objects are created using the new keyword.</li>
+        </ol>
+        <p>
+          Objects are fundamental to grasping object-oriented technology. Observe your surroundings and you'll see
+          numerous instances of actual items: your pet, your workspace, your TV, your bike.
+
+          <br><br>Objects in the real world possess two traits: they each exhibit state and behavior. For example, Dogs
+          possess attributes (name, color, breed, hunger) and actions (barking, fetching, tail wagging). Bicycles
+          possess state (active gear, pedal cadence, velocity) and behavior (gear shifting, pedal cadence adjustment,
+          brake application). Recognizing the state and behavior of real-world items is an excellent starting point for
+          considering object-oriented programming principles.
+
+          <br><br>Take this block of code as an example,
+        </p>
+        <img src="../../images/Lessons/Lesson 4/class_definition.png" alt="Class" class="article_screenshot">
+        <img src="../../images/Lessons/Lesson 4/class_definition_output.png" alt="Class" class="article_screenshot">
+        <p>
+          In Java, objects are instances of classes, which act like blueprints. A class defines the attributes (data)
+          and methods (actions) an object can have.
+
+          <br><br>In our example, the Student class has three attributes: name, age, and course. It also has two
+          methods: showDetails() to display the student’s information, and study() to show what the student is doing.
+
+          <br><br>When we create student1 and student2 using the new keyword, we are making two separate objects from
+          the Student class. Each object stores its own information. For example, student1 has the name "Alice" and
+          course "Computer Science", while student2 has the name "Bob" and course "Mathematics".
+
+          <br><br>By calling showDetails() and study() on each object, the program prints the details and actions of
+          each student. The output clearly shows that each object works independently with its own data.
+
+
+          <br><br>To further refine your knowledge about objects watch this video from Bro Code,
+        </p>
+
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/kd3dr39rgrk" title="Java objects (OOP) ☕"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <h3>OOP MAIN PRINCIPLES </h3>
+      <p>
+        One of the reasons Java is so popular is because it uses Object-Oriented Programming (OOP).
+        <br>OOP is a way of organizing code by using objects, which are like real-world things. For example, a Car can
+        be an object. It has attributes (like color, brand, and year) and methods (things it can do, like startEngine or
+        stop).
+
+        <br><br>In OOP, we create classes which are like blueprints for objects. A class defines what attributes and
+        methods the objects will have. Then, we can make many objects from the same class, each with its own unique
+        values.
+        <br>The main ideas in Java OOP are:
+
+        <br><br>Class and Object – Class is the blueprint, object is the real thing.
+        <br>Encapsulation – Keeping data safe inside the object and using methods to access it.
+        <br>Inheritance – One class can use properties of another class to save time.
+        <br>Polymorphism – Objects can do many things, depending on how we use them.
+        <br>Abstraction – Hiding unnecessary details and showing only what is needed.
+
+        <br><br>Since class and object is discussed on this article this section is focused more on the 4 main
+        principles of Object Oriented Programming.
+
+        <br><br>Before proceeding with the OOP concepts it is a good idea to learn more first about Access Modifiers in
+        Java <a href="../Lessons/lessons1.html#access_modifiers">click this link</a> if you wish to know more and if you
+        already know about it then you can proceed reading this section.
+
+      </p>
+
+      <section id="encapsulation">
+        <h3>Encapsulation</h3>
+        <h4>Key Features of Objects:</h4>
+        <p>
+          Encapsulation means protecting data by wrapping it inside a class and controlling how it is accessed.
+          <br>Instead of allowing direct access to variables, we usually make them private and use getters and setters
+          for controlled access.
+
+          <br><br>If a class has a private variable balance, other classes cannot directly change it. They must use
+          methods, preventing invalid data and keeping the object safe.
+
+          <br><br>Why it matters:
+        </p>
+
+        <ul>
+          <li>Protects data from accidental changes
+          <li>Makes the code easier to update</li>
+          <li>Allows validation before changing values</li>
+        </ul>
+
+        <p>
+          Example Code,
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/encapsulation example.PNG" alt="Encapsulation"
+          class="article_screenshot">
+
+        <p>
+          In the Java programming language, and in many other languages, information hiding is controlled using
+          getter/setter methods for data attributes that will be readable or that may be updated by other classes.
+
+          <br><br>Information hiding means keeping your data safe and private inside a class so that other parts of the
+          program cannot change it by accident.
+          <br>To do this, we usually make our variables private, which means only the class itself can use them.
+
+          <br><br>But… what if another class needs to read or update that data?
+          <br>That’s where getters and setters come in. A getter is a small method that returns the value of a private
+          variable. Think of it like looking through a window but not touching anything.
+
+          <br><br>A setter is a method that changes the value of a private variable, but only in a controlled way.
+          <br>Think of it like a secure door where only allowed changes can pass. By using getters and setters, Java
+          makes sure that your data is safe, organized, and not changed in a wrong way. This helps prevent bugs and
+          keeps your program easier to understand.
+
+          <br><br>To learn more about Java encapsulation watch this video from BroCode,
+
+        </p>
+
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/eboNNUADeIc" title="Java encapsulation 💊"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section id="inheritance">
+        <h3>Inheritance</h3>
+        <h4>Key Features of Objects:</h4>
+        <p>
+          Inheritance allows one class (child) to reuse the attributes and behaviors of another class (parent).
+          <br>It prevents repeating the same code in multiple classes.
+
+          <b><br></b>Example:
+          <br><br>A class Car might inherit from a more general class Vehicle.
+          <br><br>Then Car automatically gets attributes like speed, color, or methods like start() without rewriting
+          them.
+
+          <br><br>Why it matters:
+
+        </p>
+
+        <ul>
+          <li>Reduces duplicate code</li>
+          <li>Makes the program easier to expand</li>
+          <li>Helps create logical hierarchies (e.g., Animal → Dog → Labrador)</li>
+        </ul>
+
+        <p>
+          Example Code,
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/inheritance example.PNG" alt="Inheritance" class="article_screenshot">
+
+        <p>
+          Java Inheritance is a fundamental concept in object-oriented programming that allows a new class to inherit
+          properties and behaviors (fields and methods) from an existing class. This promotes code reusability and
+          establishes a hierarchical relationship between classes.
+
+          <br><br>Inheritance in Java means that one class can take or borrow things (like variables and methods) from
+          another class.
+
+          <br><br>Think of it like this:
+
+        </p>
+
+        <ul>
+          <li>You have a parent class (also called the superclass).</li>
+          <li>You create a child class (also called the subclass) that automatically gets everything the parent has.
+          </li>
+        </ul>
+
+        <p>
+          It’s similar to how a child inherits traits from their parents in real life.
+
+          <br><br>Why is this useful?
+          <br>You don’t need to write the same code again — the child class can reuse the parent’s code.
+
+        </p>
+
+        <ul>
+          <li>It makes your code cleaner and easier to manage.</li>
+          <li>It creates a clear family tree or hierarchy between classes.</li>
+        </ul>
+
+        <h3>To learn more about inheritance watch this video from Alex Lee on his java tutorial,</h3>
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/zbVAU7lK25Q"
+          title="Inheritance in Java Tutorial #86" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section id="polymorphism">
+        <h3>Polymorphism</h3>
+        <p>
+          Polymorphism means one method can behave differently depending on the object calling it.
+
+          <br><br>There are two types:
+
+        </p>
+
+        <ul>
+          <li>Compile-time polymorphism – Method Overloading</li>
+          <li>Runtime polymorphism – Method Overriding</li>
+        </ul>
+
+        <p>
+          Method overloading is a way to have more than one method in the same class with the same name, but with
+          different inputs. The differences can be in the number of parameters, their types, or both. Overloading allows
+          a class to perform similar operations in different ways without needing separate method names for each. The
+          key point is that the program decides at compile time which version of the method to use, based on the number
+          or type of arguments provided when the method is called. This makes the code easier to read and keeps method
+          names consistent, even if the operations vary slightly.
+
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/method overloading.PNG" alt="Method overloading"
+          class="article_screenshot">
+
+        <p>
+          Method overriding, on the other hand, happens when a child class provides its own version of a method that
+          already exists in a parent class. The method in the child class must have the same name, same parameters, and
+          same return type (or a compatible one). The main purpose of overriding is to allow the child class to give a
+          specific behavior while still keeping the same interface as the parent. The program decides at runtime which
+          method to execute, based on the actual object being used. This enables dynamic behavior in the program,
+          allowing the same method call to act differently depending on the object, which is a key feature of
+          object-oriented programming.
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/method overriding.PNG" alt="Method overriding"
+          class="article_screenshot">
+
+        <p>
+          Example:
+          <br>A method makeSound() can produce different sounds:
+          <br>A Dog object → “Bark”
+          <br>A Cat object → “Meow”
+
+          <br><br>Even though the method name is the same, the behavior changes depending on the object's actual type.
+
+          <br><br>Why it matters:
+
+        </p>
+
+        <ul>
+          <li>Makes code flexible</li>
+          <li>Supports dynamic behavior</li>
+          <li>Useful for GUI apps, games, and frameworks</li>
+        </ul>
+
+        <p>
+          Example code of Method Overloading,
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/method overloading example.PNG" alt="Example code of Method Overloading"
+          class="article_screenshot">
+
+        <p>
+          Example code of Method Overriding,
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/method overriding example.PNG" alt="Example code of Method Overriding"
+          class="article_screenshot">
+
+        <p>
+          Polymorphism in Java is one of the core concepts in object-oriented programming (OOP) that allows objects to
+          behave differently based on their specific class type. The word polymorphism means having many forms, and it
+          comes from the Greek words poly (many) and morph (forms), this means one entity can take many forms. In Java,
+          polymorphism allows the same method or object to behave differently based on the context, specially on the
+          project's actual runtime class.
+
+          <br><br>The word polymorphism literally means “many forms.”
+
+          <br><br>Think of it like this:
+          <br>You have one method name, but it can act differently depending on the class that uses it.
+          <br>Or you have one object reference, but it can point to different types of objects at runtime.
+
+          <br><br>A simple real-life example:
+
+          <br><br>Imagine you tell different animals to “makeSound()”.
+
+        </p>
+
+        <ul>
+          <li>A Dog will bark.</li>
+          <li>A Cat will meow.</li>
+          <li>A Cow will moo</li>
+        </ul>
+
+        <p>
+          Same command but different result. That is polymorphism.
+
+          <br><br>To learn more about polymorphism watch this comprehensive video from Coding with John,
+
+        </p>
+
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/jhDUxynEQRI"
+          title="Java Polymorphism Fully Explained In 7 Minutes" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </section>
+
+      <section id="abstraction">
+        <h3>Abstraction</h3>
+        <p>
+          Abstraction hides unnecessary details and shows only what the user needs.
+
+          <br><br>Example:
+          <br>When you use a method startEngine(), you do not need to know what wires or parts are needed to start a car
+          engine. You just call the method. In Java, abstraction can be achieved through:
+
+        </p>
+
+        <ul>
+          <li>Abstract classes</li>
+          <li>Interfaces</li>
+        </ul>
+
+        <p>
+          An abstract class is like a blueprint for other classes. It can have methods with or without a body. The
+          methods without a body (abstract methods) must be implemented by child classes, while the methods with a body
+          can be used as-is. You cannot create objects directly from an abstract class.
+
+          <br><br>Sample code with abstract class,
+
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/abstract class example.PNG" alt="Sample code with abstract class"
+          class="article_screenshot">
+
+        <p>
+          An interface is like a contract for classes. It only contains method declarations (no body, except
+          default/static methods). Any class that implements the interface must provide the behavior for all methods. A
+          class can implement multiple interfaces, which is a way to achieve multiple inheritance in Java.
+
+          <br><br>Sample code with interface,
+
+        </p>
+
+        <img src="../../images/Lessons/Lesson 4/interface example.PNG" alt="Sample code with interface"
+          class="article_screenshot">
+
+
+        <p>
+          Why Abstraction matters:
+        </p>
+
+        <ul>
+          <li>Reduces complexity</li>
+          <li>Helps focus on important features</li>
+          <li>Makes large systems easier to design</li>
+        </ul>
+
+        <p>
+          Abstraction in Java refers to hiding the implementation details of a code and exposing only the necessary
+          information to the user. It provides the ability to simplify complex systems by ignoring irrelevant details
+          and reducing complexity.
+
+          <br><br>Abstraction in Java means hiding the complicated details of how something works and showing only
+          what’s necessary.
+
+          <br><br>Think of it like using a TV remote:
+
+        </p>
+
+        <ul>
+          <li>You don’t need to know how the remote sends signals or how the TV processes them.</li>
+          <li>You just press the buttons you need (like power, volume, or channel), and it works.</li>
+        </ul>
+
+        <p>
+          In programming, abstraction works the same way:
+        </p>
+
+        <ul>
+          <li>You create a class or method that does something for the user.</li>
+          <li>The user only sees what it does, not how it does it.</li>
+        </ul>
+
+        <p>
+          This makes programs simpler, easier to understand, and less confusing, especially for large or complex
+          systems.
+
+          <br><br>To understand the abstraction fully watch this video from Coding with John,
+
+        </p>
+
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/HvPlEJ3LHgE"
+          title="Abstract Classes and Methods in Java Explained in 7 Minutes" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </section>
+
+      <section id="references">
+        <h3>References:</h3>
+        <p>
+          [1]datacamp, “Java Class Attributes,” DataCamp, 2025. https://www.datacamp.com/doc/java/class-attributes
+          (accessed Nov. 22, 2025).
+          <br>[2]Simplilearn, “An Introduction to Methods in Java with Examples,” Simplilearn.com, Mar. 23, 2021.
+          https://www.simplilearn.com/tutorials/java-tutorial/methods-in-java (accessed Nov. 22, 2025).
+          <br>[3]M. Rushikesh and S. Raut, “Research Paper on Object-Oriented Programming (OOP),” Oct. 2020. Available:
+          https://www.irjet.net/archives/V7/i10/IRJET-V7I10247.pdf
+          <br>[4]ORACLE, “Lesson: Classes and Objects (The JavaTM Tutorials > Learning the Java Language),” Oracle.com,
+          2024. https://docs.oracle.com/javase/tutorial/java/javaOO/index.html (accessed Nov. 23, 2025).
+          <br>[5] sumo logic, “What is encapsulation?,” Sumo Logic, Feb. 17, 2025.
+          https://www.sumologic.com/glossary/encapsulation (accessed Dec. 02, 2025).
+          <br>[6]datacamp, “Java Inheritance,” DataCamp, 2025. https://www.datacamp.com/doc/java/inheritance (accessed
+          Dec. 02, 2025).
+          <br>[7]GeeksforGeeks, “Polymorphism in Java,” GeeksforGeeks, Jun. 17, 2019.
+          https://www.geeksforgeeks.org/java/polymorphism-in-java/ (accessed Dec. 02, 2025).
+          <br>[8]Shreyas Sangai, “Abstraction in Java - Scaler Topics,” Scaler Topics, Aug. 31, 2021.
+          https://www.scaler.com/topics/java/abstraction-in-java/ (accessed Dec. 02, 2025).
+        </p>
+      </section>
+
+      <section id="lesson_examination">
+        <h3>Lesson Examination</h3>
+        <form id="quizForm4">
+          <div class="question">
+            <p>What is an attribute in a class?</p>
+            <div class="choice">
+              <input type="radio" name="q1" value="A" id="q1a">
+              <label for="q1a">A method that performs an action</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" value="B" id="q1b">
+              <label for="q1b">The data or characteristics of an object</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" value="C" id="q1c">
+              <label for="q1c">A class that inherits another class</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" value="D" id="q1d">
+              <label for="q1d">A block of code without a name</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>What are methods used for?</p>
+            <div class="choice">
+              <input type="radio" name="q2" value="A" id="q2a">
+              <label for="q2a">Storing data inside an object</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" value="B" id="q2b">
+              <label for="q2b">Creating new objects</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" value="C" id="q2c">
+              <label for="q2c">Performing actions or behaviors</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" value="D" id="q2d">
+              <label for="q2d">Compiling code</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>What is a class?</p>
+            <div class="choice">
+              <input type="radio" name="q3" value="A" id="q3a">
+              <label for="q3a">A real object in memory</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q3" value="B" id="q3b">
+              <label for="q3b">A blueprint for creating objects</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q3" value="C" id="q3c">
+              <label for="q3c">A method that hides information</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q3" value="D" id="q3d">
+              <label for="q3d">A variable inside an object</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>What keyword is used to create an object from a class?</p>
+            <div class="choice">
+              <input type="radio" name="q4" value="A" id="q4a">
+              <label for="q4a">class</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q4" value="B" id="q4b">
+              <label for="q4b">method</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q4" value="C" id="q4c">
+              <label for="q4c">new</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q4" value="D" id="q4d">
+              <label for="q4d">create</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Which OOP principle protects data by using private variables and getters/setters?</p>
+            <div class="choice">
+              <input type="radio" name="q5" value="A" id="q5a">
+              <label for="q5a">Inheritance</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q5" value="B" id="q5b">
+              <label for="q5b">Polymorphism</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q5" value="C" id="q5c">
+              <label for="q5c">Abstraction</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q5" value="D" id="q5d">
+              <label for="q5d">Encapsulation</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>In inheritance, the class that receives attributes/methods is called:</p>
+            <div class="choice">
+              <input type="radio" name="q6" value="A" id="q6a">
+              <label for="q6a">Parent class</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q6" value="B" id="q6b">
+              <label for="q6b">Subclass / Child class</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q6" value="C" id="q6c">
+              <label for="q6c">Abstract class</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q6" value="D" id="q6d">
+              <label for="q6d">Interface</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>Which is an example of polymorphism?</p>
+            <div class="choice">
+              <input type="radio" name="q7" value="A" id="q7a">
+              <label for="q7a">Using private variables</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q7" value="B" id="q7b">
+              <label for="q7b">A method named makeSound() acting differently for Dog and Cat</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q7" value="C" id="q7c">
+              <label for="q7c">A class having attributes</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q7" value="D" id="q7d">
+              <label for="q7d">A method with no return type</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <img src="../../images/Lessons/Lesson 4/Examination/8.png" alt="" class="exam_image">
+            <div class="choice">
+              <input type="radio" name="q8" value="A" id="q8a">
+              <label for="q8a">Animal eating</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="B" id="q8b">
+              <label for="q8b">Cat eating</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="C" id="q8c">
+              <label for="q8c">eat()</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="D" id="q8d">
+              <label for="q8d">Error</label>
+            </div>
+          </div>
+
+
+          <div class="question">
+            <img src="../../images/Lessons/Lesson 4/Examination/9.png" alt="" class="exam_image">
+            <div class="choice">
+              <input type="radio" name="q8" value="A" id="q8a">
+              <label for="q8a">Blue</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="B" id="q8b">
+              <label for="q8b">Null</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="C" id="q8c">
+              <label for="q8c">Red</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="D" id="q8d">
+              <label for="q8d">Error</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <img src="../../images/Lessons/Lesson 4/Examination/10.png" alt="" class="exam_image">
+            <div class="choice">
+              <input type="radio" name="q8" value="A" id="q8a">
+              <label for="q8a">Dog speaking</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="B" id="q8b">
+              <label for="q8b">Bark!</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="C" id="q8c">
+              <label for="q8c">speak()</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q8" value="D" id="q8d">
+              <label for="q8d">Error</label>
+            </div>
+          </div>
+
+          <button type="button" onclick="checkAnswers('quizForm4', LessonFourAnswers)"
+            id="submit_button">Submit</button>
+        </form>
+      </section>
+
+      <div class="article_nav">
+                <a href="/html/Lessons/lessons3.html"><img src="/images/previous_article.jfif" alt=""
+                        class="previous"></a>
+            </div>
+
+    </article>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

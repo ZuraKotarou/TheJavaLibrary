@@ -63,7 +63,7 @@ body {
   text-align: center;
   height: 40vh;
   /* medium hero */
-  background-image: url('/images/header_background.png');
+  background-image: url('images/header_background.png');
   background-size: cover;
   background-position: center;
   margin-top: 100px;
